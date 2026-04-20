@@ -4,6 +4,7 @@ import Testimonials from "@/components/Testimonials";
 import Gallery from "@/components/Gallery";
 import CTASection from "@/components/CTASection";
 import Services from "@/components/Services";
+import PrintShowcase from "@/components/PrintShowcase";
 import HowWeWork from "@/components/HowWeWork";
 import Portfolio from "@/components/Portfolio";
 import OurStory from "@/components/OurStory";
@@ -110,6 +111,9 @@ const Index = () => {
 
       {/* Services Section */}
       <Services />
+
+      {/* Print Showcase Section */}
+      <PrintShowcase />
 
       {/* How We Work Section */}
       <HowWeWork />

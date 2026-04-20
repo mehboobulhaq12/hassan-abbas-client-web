@@ -1,6 +1,8 @@
 import { motion, useMotionValue, animate, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
-import { Menu, X } from "lucide-react";
+import { ExternalLink, Menu, X } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { PRINT_SHOP_URL } from "@/lib/constants";
 
 interface NavigationProps {
   showBanner: boolean;
@@ -154,6 +156,17 @@ const Navigation = ({ showBanner }: NavigationProps) => {
           >
             Get In Touch
           </motion.a>
+          <Button asChild variant="hero" size="sm" className="rounded-lg px-3 md:px-4">
+            <a
+              href={PRINT_SHOP_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Open the Precision Signs print shop"
+            >
+              Print Now
+              <ExternalLink className="h-4 w-4" />
+            </a>
+          </Button>
         </div>
       </motion.div>
 
@@ -198,6 +211,17 @@ const Navigation = ({ showBanner }: NavigationProps) => {
                 <div className="mb-6 pb-4 border-b border-gray-200 dark:border-gray-700">
                   <h3 className="text-lg font-bold text-orange-500">Menu</h3>
                 </div>
+                <Button asChild variant="hero" className="mb-4 w-full justify-center rounded-lg">
+                  <a
+                    href={PRINT_SHOP_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Open the Precision Signs print shop"
+                  >
+                    Print Now
+                    <ExternalLink className="h-4 w-4" />
+                  </a>
+                </Button>
                 {navItems.map((item, idx) => {
                   const isActive = activeSection === item.id;
                   return (

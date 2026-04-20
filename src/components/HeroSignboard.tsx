@@ -68,7 +68,7 @@ const HeroSignboard = () => {
           transition={{ duration: 0.9, ease: [0.25, 0.1, 0.25, 1], delay: 0.5 }}
           className="text-base md:text-lg font-normal text-center text-black max-w-3xl leading-relaxed pointer-events-none"
         >
-          Struggling to get seen by customers? Our marketing experts turn passing traffic into paying clients. With decades of marketing and signage expertise, we handle everything from design and permitting to installation and digital marketing so you can focus on growing your business.
+          Struggling to get seen by customers? Our team helps businesses stand out with custom signs, large-format printing, window graphics, permitting, installation, and digital marketing. From storefront branding to everyday print products, we handle the visibility work so you can focus on growing your business.
         </motion.p>
       </div>
     </div>

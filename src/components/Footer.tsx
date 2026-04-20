@@ -1,21 +1,30 @@
 import { Facebook, Instagram, Mail, Phone, MapPin } from "lucide-react";
 import logo from "@/assets/logo.jpg";
+import { PRINT_SHOP_URL } from "@/lib/constants";
+
+type FooterLink = {
+  name: string;
+  href: string;
+  external?: boolean;
+};
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
-  const quickLinks = [
+  const quickLinks: FooterLink[] = [
     { name: "Home", href: "#" },
     { name: "Services", href: "#services" },
+    { name: "Print Shop", href: PRINT_SHOP_URL, external: true },
     { name: "Portfolio", href: "#portfolio" },
     { name: "Gallery", href: "#gallery" },
     { name: "Contact", href: "#contact-us" },
   ];
 
-  const services = [
+  const services: FooterLink[] = [
     { name: "Sign Manufacturing", href: "#services" },
     { name: "Sign Installation", href: "#services" },
     { name: "Design & Permits", href: "#services" },
+    { name: "Online Print Shop", href: PRINT_SHOP_URL, external: true },
     { name: "Premium Services", href: "#premium-services" },
     { name: "Sign Permitting", href: "#sign-permitting" },
   ];
@@ -42,7 +51,7 @@ const Footer = () => {
               </h3>
             </div>
             <p className="text-sm text-white/90 leading-relaxed">
-              A leader in the signage industry since 1995, renowned for blending craftsmanship with innovation to light up the Texas landscape.
+              A leader in the signage industry since 1995, blending craftsmanship, custom printing, and brand visibility solutions for businesses across Texas.
             </p>
             
             {/* Contact Info */}
@@ -74,6 +83,8 @@ const Footer = () => {
                 <li key={link.name}>
                   <a
                     href={link.href}
+                    target={link.external ? "_blank" : undefined}
+                    rel={link.external ? "noopener noreferrer" : undefined}
                     className="text-sm text-white/90 hover:text-orange-500 transition-colors inline-block"
                   >
                     {link.name}
@@ -91,6 +102,8 @@ const Footer = () => {
                 <li key={service.name}>
                   <a
                     href={service.href}
+                    target={service.external ? "_blank" : undefined}
+                    rel={service.external ? "noopener noreferrer" : undefined}
                     className="text-sm text-white/90 hover:text-orange-500 transition-colors inline-block"
                   >
                     {service.name}

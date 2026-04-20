@@ -28,7 +28,7 @@ const PremiumServices = () => {
     {
       title: "SEO and AEO",
       image: seoAeo,
-      description: "Boost your online visibility with comprehensive search engine optimization and answer engine optimization strategies that put your business at the top of search results."
+      description: "Boost your online visibility with SEO and AEO strategies built around signage, printing, and branded search intent so customers looking for a Houston sign company or Precision Signs print shop can find you faster."
     },
     {
       title: "AI Marketing",
@@ -54,6 +54,9 @@ const PremiumServices = () => {
         <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-orange-500">
           Our Premium Service
         </h2>
+        <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
+          We support growth beyond fabrication with digital services that strengthen how customers discover your signage company and your online print shop.
+        </p>
       </div>
 
       <div className="w-full max-w-7xl px-4 sm:px-8 md:px-12 relative z-10">

@@ -32,7 +32,7 @@ const Services = () => {
     {
       title: "Printing",
       image: printing,
-      description: "State of the art printing technology delivering vibrant, long lasting graphics that capture attention and withstand the elements."
+      description: "Our print shop produces banners, flyers, menus, decals, window graphics, and large-format branded materials with sharp color and durable finishes."
     },
     {
       title: "Awnings and Canopy",
@@ -48,6 +48,9 @@ const Services = () => {
         <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-orange-500">
           What We Offer
         </h2>
+        <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
+          Precision Media & Signs delivers sign fabrication, installation, and custom print solutions so customers can get signage and print work from one trusted Houston partner.
+        </p>
       </div>
 
       <div className="w-full max-w-7xl px-12 relative z-10">
