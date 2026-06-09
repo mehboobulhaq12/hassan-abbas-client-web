@@ -45,7 +45,7 @@ const Navigation = ({ showBanner }: NavigationProps) => {
     { title: "Services", href: "#services", id: "services" },
     { title: "How We Work", href: "#how-we-work", id: "how-we-work" },
     { title: "Portfolio", href: "#portfolio", id: "portfolio" },
-    { title: "Premium Services", href: "#premium-services", id: "premium-services" },
+    { title: "Print Services", href: "#print-services", id: "print-services" },
     { title: "Why Choose Us", href: "#sign-permitting", id: "sign-permitting" },
   ];
 
@@ -54,7 +54,7 @@ const Navigation = ({ showBanner }: NavigationProps) => {
     const handleScroll = () => {
       if (!ticking) {
         window.requestAnimationFrame(() => {
-          const sections = ["home", "our-story", "testimonials", "gallery", "services", "how-we-work", "portfolio", "premium-services", "sign-permitting", "contact-us"];
+          const sections = ["home", "our-story", "testimonials", "gallery", "services", "how-we-work", "portfolio", "print-services", "sign-permitting", "contact-us"];
           const scrollPosition = window.scrollY + 200;
 
           // Check if at top of page

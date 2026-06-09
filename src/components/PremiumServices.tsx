@@ -6,56 +6,50 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import socialMediaMarketing from "@/assets/Services Pics/Social Media Marketing.jpg";
-import websiteDesign from "@/assets/Services Pics/Website Design.jpg";
-import seoAeo from "@/assets/Services Pics/SEO and AEO.jpg";
-import aiMarketing from "@/assets/Services Pics/AI Marketing.png";
-import graphicDesign from "@/assets/Services Pics/Graphic Design.png";
-import refurbishmentRepair from "@/assets/Services Pics/Refurbishment and Repair.png";
+import printing from "@/assets/printing.jpg";
+import graphicDesign from "@/assets/graphic-design.jpg";
+import signsMedia from "@/assets/signs and media.png";
+import showcaseImage from "@/assets/showcase-image.png";
+import galleryPrint from "@/assets/gallery-1.jpg";
 
 const PremiumServices = () => {
   const services = [
     {
-      title: "Social Media Marketing",
-      image: socialMediaMarketing,
-      description: "Elevate your brand presence across all social platforms with strategic content creation, engagement campaigns, and data-driven insights to maximize your reach and impact."
+      title: "Trade Shows Exhibits",
+      image: signsMedia,
+      description: "Custom booth graphics, display panels, backdrops, banners, and branded exhibit materials built to make your business stand out on a busy show floor."
     },
     {
-      title: "Website Design",
-      image: websiteDesign,
-      description: "Create stunning, responsive websites that captivate your audience and drive conversions. From concept to launch, we deliver exceptional digital experiences tailored to your brand."
+      title: "Large Format Printing",
+      image: printing,
+      description: "High impact banners, posters, wall graphics, window graphics, vehicle graphics, and oversized prints produced with crisp color and durable materials."
     },
     {
-      title: "SEO and AEO",
-      image: seoAeo,
-      description: "Boost your online visibility with SEO and AEO strategies built around signage, printing, and branded search intent so customers looking for a Houston sign company or Precision Signs print shop can find you faster."
-    },
-    {
-      title: "AI Marketing",
-      image: aiMarketing,
-      description: "Harness the power of artificial intelligence to automate marketing campaigns, personalize customer experiences, and gain predictive insights for smarter business decisions."
-    },
-    {
-      title: "Graphic Design",
+      title: "Promotional Printing",
       image: graphicDesign,
-      description: "Transform your vision into compelling visual content with our expert graphic design services. From logos to marketing materials, we create designs that leave lasting impressions."
+      description: "Branded promotional materials for campaigns, events, giveaways, and local outreach, designed to keep your company visible after the first impression."
     },
     {
-      title: "Refurbishment and Repair",
-      image: refurbishmentRepair,
-      description: "Extend the life of your existing signage with professional refurbishment and repair services. We restore signs to their original glory with quality workmanship and attention to detail."
+      title: "Marketing Printing",
+      image: galleryPrint,
+      description: "Flyers, brochures, posters, presentation materials, sales sheets, and campaign prints that help your team promote offers clearly and professionally."
+    },
+    {
+      title: "Business Expo",
+      image: showcaseImage,
+      description: "Complete expo-ready print packages including signage, table displays, banners, handouts, branded graphics, and materials for business events."
     }
   ];
 
   return (
-    <section id="premium-services" className="w-full flex flex-col items-center justify-start py-12 px-4 relative overflow-hidden">
+    <section id="print-services" className="w-full flex flex-col items-center justify-start py-12 px-4 relative overflow-hidden">
       <div className="absolute inset-0 opacity-[0.03] pointer-events-none" style={{ backgroundImage: 'url(/src/assets/signboard-texture.jpg)', backgroundSize: '600px 600px', backgroundRepeat: 'repeat' }}></div>
       <div className="max-w-3xl text-center mb-12 relative z-10">
         <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-orange-500">
-          Our Premium Service
+          Print Service
         </h2>
         <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
-          We support growth beyond fabrication with digital services that strengthen how customers discover your signage company and your online print shop.
+          From event displays to everyday marketing materials, we produce print products that help businesses show up clearly in-store, on-site, and at every customer touchpoint.
         </p>
       </div>
 

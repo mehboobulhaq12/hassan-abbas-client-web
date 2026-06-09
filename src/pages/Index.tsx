@@ -121,7 +121,7 @@ const Index = () => {
       {/* Portfolio Section */}
       <Portfolio />
 
-      {/* Premium Services Section */}
+      {/* Print Services Section */}
       <PremiumServices />
 
       {/* Sign Permitting Section */}

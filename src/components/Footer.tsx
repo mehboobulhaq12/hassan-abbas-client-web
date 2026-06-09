@@ -25,7 +25,7 @@ const Footer = () => {
     { name: "Sign Installation", href: "#services" },
     { name: "Design & Permits", href: "#services" },
     { name: "Online Print Shop", href: PRINT_SHOP_URL, external: true },
-    { name: "Premium Services", href: "#premium-services" },
+    { name: "Print Services", href: "#print-services" },
     { name: "Sign Permitting", href: "#sign-permitting" },
   ];
 
