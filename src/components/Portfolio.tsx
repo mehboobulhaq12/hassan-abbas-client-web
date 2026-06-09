@@ -8,6 +8,11 @@ import portfolio6 from "@/assets/portfolio-6.jpg";
 import portfolio7 from "@/assets/portfolio-7.jpg";
 import portfolio8 from "@/assets/portfolio-8.jpg";
 import portfolio9 from "@/assets/portfolio-9.jpg";
+import portfolioHealthquest from "@/assets/portfolio-healthquest.jpg";
+import portfolioPylonSign from "@/assets/portfolio-pylon-sign.jpg";
+import portfolioBrothersBusinessCenter from "@/assets/portfolio-brothers-business-center.jpg";
+import portfolioBuildingNumber from "@/assets/portfolio-building-number.jpg";
+import portfolioBoostMobile from "@/assets/portfolio-boost-mobile.jpg";
 
 const Portfolio = () => {
   const portfolioImages = [
@@ -50,6 +55,31 @@ const Portfolio = () => {
       url: portfolio8,
       title: "Arabisca Café",
       desc: "Dimensional logo and branding installation",
+    },
+    {
+      url: portfolioHealthquest,
+      title: "HealthQuest Infusion Center",
+      desc: "Large exterior dimensional lettering and storefront sign installation",
+    },
+    {
+      url: portfolioPylonSign,
+      title: "Multi-Tenant Pylon Sign",
+      desc: "High-rise tenant panel updates and exterior sign service",
+    },
+    {
+      url: portfolioBrothersBusinessCenter,
+      title: "Brothers Business Center V",
+      desc: "Monument directory panels with tenant branding and leasing information",
+    },
+    {
+      url: portfolioBuildingNumber,
+      title: "Building Number Signage",
+      desc: "Clean unit number signage for apartment and commercial properties",
+    },
+    {
+      url: portfolioBoostMobile,
+      title: "Boost Mobile Storefront",
+      desc: "Retail storefront signage with window graphics and branded print displays",
     },
   ];
 

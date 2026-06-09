@@ -11,6 +11,7 @@ import graphicDesign from "@/assets/graphic-design.jpg";
 import signsMedia from "@/assets/signs and media.png";
 import showcaseImage from "@/assets/showcase-image.png";
 import galleryPrint from "@/assets/gallery-1.jpg";
+import signboardTexture from "@/assets/signboard-texture.jpg";
 
 const PremiumServices = () => {
   const services = [
@@ -43,7 +44,7 @@ const PremiumServices = () => {
 
   return (
     <section id="print-services" className="w-full flex flex-col items-center justify-start py-12 px-4 relative overflow-hidden">
-      <div className="absolute inset-0 opacity-[0.03] pointer-events-none" style={{ backgroundImage: 'url(/src/assets/signboard-texture.jpg)', backgroundSize: '600px 600px', backgroundRepeat: 'repeat' }}></div>
+      <div className="absolute inset-0 opacity-[0.03] pointer-events-none" style={{ backgroundImage: `url(${signboardTexture})`, backgroundSize: '600px 600px', backgroundRepeat: 'repeat' }}></div>
       <div className="max-w-3xl text-center mb-12 relative z-10">
         <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-orange-500">
           Print Service
