@@ -1,3 +1,4 @@
+import { useState } from "react";
 import ExpandableGallery from "@/components/ui/gallery-animation";
 import portfolio1 from "@/assets/portfolio-1.jpg";
 import portfolio2 from "@/assets/portfolio-2.jpg";
@@ -15,6 +16,8 @@ import portfolioBuildingNumber from "@/assets/portfolio-building-number.jpg";
 import portfolioBoostMobile from "@/assets/portfolio-boost-mobile.jpg";
 
 const Portfolio = () => {
+  const [showAll, setShowAll] = useState(false);
+
   const portfolioImages = [
     {
       url: portfolio1,
@@ -57,6 +60,11 @@ const Portfolio = () => {
       desc: "Dimensional logo and branding installation",
     },
     {
+      url: portfolio9,
+      title: "Arabisca Exterior Signage",
+      desc: "Exterior restaurant signage with dimensional brand elements",
+    },
+    {
       url: portfolioHealthquest,
       title: "HealthQuest Infusion Center",
       desc: "Large exterior dimensional lettering and storefront sign installation",
@@ -83,6 +91,8 @@ const Portfolio = () => {
     },
   ];
 
+  const featuredImages = portfolioImages.slice(0, 8);
+
   return (
     <section id="portfolio" className="py-16 px-4 md:px-8 bg-gradient-to-b from-white to-gray-50">
       <div className="max-w-7xl mx-auto">
@@ -99,8 +109,42 @@ const Portfolio = () => {
         
         {/* Expandable Gallery */}
         <div className="px-4 md:px-0">
-          <ExpandableGallery images={portfolioImages} className="w-full" />
+          <ExpandableGallery images={featuredImages} className="w-full" />
         </div>
+
+        <div className="mt-10 flex justify-center">
+          <button
+            type="button"
+            onClick={() => setShowAll((value) => !value)}
+            className="inline-flex items-center justify-center rounded-md bg-orange-500 px-6 py-3 text-sm font-semibold text-white shadow-md transition-colors hover:bg-orange-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:ring-offset-2"
+            aria-expanded={showAll}
+            aria-controls="all-portfolio-images"
+          >
+            {showAll ? "Show Featured Images" : "View All Images"}
+          </button>
+        </div>
+
+        {showAll && (
+          <div id="all-portfolio-images" className="mt-10 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {portfolioImages.map((image) => (
+              <article key={image.title} className="overflow-hidden rounded-md border border-gray-200 bg-white shadow-sm">
+                <div className="aspect-[4/3] w-full overflow-hidden bg-gray-100">
+                  <img
+                    src={image.url}
+                    alt={image.title}
+                    className="h-full w-full object-cover"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+                <div className="p-4">
+                  <h3 className="text-lg font-bold text-gray-900">{image.title}</h3>
+                  <p className="mt-1 text-sm leading-relaxed text-gray-600">{image.desc}</p>
+                </div>
+              </article>
+            ))}
+          </div>
+        )}
       </div>
     </section>
   );
